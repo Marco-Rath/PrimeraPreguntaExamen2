@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TIENDA"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#3a2"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Numero de Compra"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:textColor="#f29191"
+
+        />
+
+    <EditText
+        android:id="@+id/cajaNumeroCompra"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#d4d4d4"
+        android:hint="Ingrese el numero de compra"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:inputType="number"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Nombre del Producto"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:textColor="#f29191"
+
+        />
+    <EditText
+        android:id="@+id/cajaNombreProducto"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#d4d4d4"
+        android:hint="Ingrese el nombre del producto"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:inputType="text"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Cantidad"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:textColor="#f29191"
+
+
+        />
+    <EditText
+        android:id="@+id/cajaCantidad"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#d4d4d4"
+        android:hint="Ingrese la cantidad"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:inputType="number"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Unidad de Medida"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:textColor="#f29191"
+
+
+        />
+    <EditText
+        android:id="@+id/cajaUnidadMedida"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#d4d4d4"
+        android:hint="Ingrese la unidad"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:inputType="text"
+        />
+    <TableLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Consultar:"
+                android:textSize="20dp"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/cajaBuscarProducto"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:hint="Nombre Producto"
+                android:background="#d4d4d4"
+                android:inputType="text"
+                />
+
+            <Button
+                android:id="@+id/btnBuscarProducto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Buscar"
+                android:backgroundTint="#3a2a"
+                android:textColor="#a35200"
+                />
+        </TableRow>
+    </TableLayout>
+
+   <TableLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+
+       >
+       <TableRow
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+
+           >
+           <Button
+               android:id="@+id/btnInsertar"
+               android:layout_width="200dp"
+
+               android:text="Insertar"
+               android:backgroundTint="#3a2a"
+               android:textColor="#a35200"
+               android:layout_weight="2"
+               />
+           <Button
+               android:id="@+id/btnMostrar"
+
+               android:layout_width="200dp"
+               android:text="Mostrar"
+               android:layout_weight="2"
+               android:backgroundTint="#3a2a"
+               android:textColor="#a35200"
+               />
+
+       </TableRow>
+
+   </TableLayout>
+
+
+
+</LinearLayout>
